@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edmond GBAMOU — Professeur de Mathématiques</title>
+<meta name="description" content="Site professionnel d'Edmond GBAMOU, professeur de mathématiques, enseignant et chercheur à Conakry, Guinée.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#accueil" class="nav-logo">E<span>.</span>G</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#apropos">À propos</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#cours">Cours</a>
+      <a href="#recherche">Recherche</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="accueil">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-kicker">Professeur de Mathématiques • Enseignant • Chercheur</p>
+        <h1>Edmond <span class="hl">GBAMOU</span></h1>
+        <p class="hero-quote">« Transmettre le savoir, développer le raisonnement, construire l'avenir. »</p>
+        <p class="hero-sub">
+          Professeur de mathématiques et enseignant dans le supérieur, à Conakry.
+          Je m'intéresse à l'enseignement, à la recherche et au développement de
+          méthodes pédagogiques pour faciliter l'apprentissage des mathématiques.
+        </p>
+        <div class="hero-tags">
+          <span>📚 Enseignement</span>
+          <span>🎓 Formation</span>
+          <span>🔬 Recherche</span>
+          <span>💻 Informatique</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#apropos" class="btn btn-primary">Découvrir mon parcours</a>
+          <a href="#contact" class="btn btn-ghost">Me contacter</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <canvas id="tangentCanvas"></canvas>
+        <p class="hero-caption">f(x) = tangente en un point mobile</p>
+      </div>
+    </div>
+    <a href="#apropos" class="scroll-cue" aria-label="Défiler vers le bas"><span></span></a>
+  </section>
+
+  <!-- A PROPOS -->
+  <section class="section" id="apropos">
+    <div class="section-inner">
+      <p class="kicker">Qui je suis</p>
+      <h2>À propos de moi</h2>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="avatar-photo">
+            <img src="edmond-gbamou.jpg" alt="Portrait d'Edmond GBAMOU">
+          </div>
+          <p class="about-text">
+            Je suis Edmond GBAMOU, professeur de mathématiques et enseignant dans
+            le supérieur. Titulaire d'une formation en mathématiques et sciences
+            de l'éducation à l'ISSEG, je possède plusieurs années d'expérience
+            dans l'enseignement et l'accompagnement pédagogique des élèves et
+            des étudiants.
+          </p>
+          <p class="about-text">
+            Je suis actuellement inscrit en Master de Mathématiques à
+            l'Institut Ouest Africain de Mathématiques (IOAM/UGANC), depuis 2025.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">années d'enseignement</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">4</span>
+            <span class="stat-label">établissements accompagnés</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2025</span>
+            <span class="stat-label">entrée en Master IOAM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARCOURS -->
+  <section class="section section-alt" id="parcours">
+    <div class="section-inner">
+      <p class="kicker">Formation & expérience</p>
+      <h2>Parcours</h2>
+
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" data-tab="formation" role="tab" aria-selected="true">Formation</button>
+        <button class="tab-btn" data-tab="experience" role="tab" aria-selected="false">Expérience professionnelle</button>
+      </div>
+
+      <div class="tab-panel active" id="formation" role="tabpanel">
+        <div class="timeline">
+          <div class="timeline-axis"></div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot" style="--dot-color: var(--coral)"></span>
+            <span class="timeline-year">2013</span>
+            <div class="timeline-content">
+              <h3>Baccalauréat</h3>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot" style="--dot-color: var(--gold)"></span>
+            <span class="timeline-year">2017</span>
+            <div class="timeline-content">
+              <h3>Licence — ISSEG</h3>
+              <p>Formation supérieure en mathématiques et sciences de l'éducation</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot" style="--dot-color: var(--teal)"></span>
+            <span class="timeline-year">Depuis 2025</span>
+            <div class="timeline-content">
+              <h3>Master de Mathématiques — IOAM</h3>
+              <p>Institut Ouest Africain de Mathématiques (IOAM/UGANC)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="experience" role="tabpanel">
+        <div class="timeline">
+          <div class="timeline-axis"></div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot" style="--dot-color: var(--indigo)"></span>
+            <span class="timeline-year">2016 – aujourd'hui</span>
+            <div class="timeline-content">
+              <h3>Répétiteur et accompagnement pédagogique</h3>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot" style="--dot-color: var(--coral)"></span>
+            <span class="timeline-year">2017 – 2025</span>
+            <div class="timeline-content">
+              <h3>Professeur de Mathématiques</h3>
+              <p>Groupe scolaire HADJA HABY DIAKITE</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot" style="--dot-color: var(--gold)"></span>
+            <span class="timeline-year">2018 – 2023</span>
+            <div class="timeline-content">
+              <h3>Professeur</h3>
+              <p>Groupe scolaire Lady Diana</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot" style="--dot-color: var(--teal)"></span>
+            <span class="timeline-year">2018 – 2019</span>
+            <div class="timeline-content">
+              <h3>Enseignant contractuel</h3>
+              <p>Lycée Denis Galema</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot" style="--dot-color: var(--indigo)"></span>
+            <span class="timeline-year">2021 – 2024</span>
+            <div class="timeline-content">
+              <h3>Assistant à l'ISSEG</h3>
+              <p>Statistiques, Analyse 1 et Analyse numérique</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot" style="--dot-color: var(--coral)"></span>
+            <span class="timeline-year">Depuis 2025</span>
+            <div class="timeline-content">
+              <h3>Professeur de Mathématiques — Fonction publique</h3>
+              <p>Au compte du MESRSI, affecté à l'ISSEG</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURS & RESSOURCES -->
+  <section class="section" id="cours">
+    <div class="section-inner">
+      <p class="kicker">Enseignement</p>
+      <h2>Cours & ressources</h2>
+
+      <div class="courses-grid">
+        <div class="course-card">
+          <h3>Mathématiques</h3>
+          <ul class="chip-list">
+            <li>Analyse 1 et Analyse 2</li>
+            <li>Algèbre</li>
+            <li>Géométrie</li>
+            <li>Coniques</li>
+            <li>Suites numériques</li>
+            <li>Polynômes</li>
+            <li>Produit scalaire</li>
+            <li>Limites</li>
+            <li>Dérivation</li>
+            <li>Intégration</li>
+          </ul>
+        </div>
+        <div class="course-card">
+          <h3>Analyse numérique</h3>
+          <ul class="chip-list">
+            <li>Méthode de Simpson</li>
+            <li>Méthode des trapèzes</li>
+            <li>Méthode des rectangles</li>
+            <li>Méthode LU</li>
+            <li>Calcul des erreurs</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resources-bar">
+        <p class="resources-label">Ressources disponibles</p>
+        <div class="resources-items">
+          <span>Cours</span>
+          <span>Exercices</span>
+          <span>Exercices corrigés</span>
+          <span>Sujets d'examens</span>
+          <span>Préparation aux concours</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECHERCHE -->
+  <section class="section section-alt" id="recherche">
+    <div class="section-inner">
+      <p class="kicker">Travaux & réflexion</p>
+      <h2>Recherche</h2>
+
+      <div class="research-grid">
+        <div class="research-block">
+          <h3>Domaines d'intérêt</h3>
+          <ul class="chip-list">
+            <li>Enseignement des mathématiques</li>
+            <li>Difficultés d'apprentissage</li>
+            <li>Méthodes pédagogiques</li>
+            <li>Analyse mathématique</li>
+            <li>Analyse numérique</li>
+            <li>Algèbre</li>
+          </ul>
+        </div>
+        <div class="research-block">
+          <h3>Thèmes de recherche</h3>
+          <ul class="research-list">
+            <li>Démotivation des élèves face aux mathématiques</li>
+            <li>Difficultés dans l'enseignement des équations du premier degré</li>
+            <li>Impact de l'absentéisme sur l'apprentissage des mathématiques</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETENCES -->
+  <section class="section" id="competences">
+    <div class="section-inner">
+      <p class="kicker">Boîte à outils</p>
+      <h2>Compétences</h2>
+
+      <div class="skills-grid">
+        <div class="skills-block">
+          <h3>Compétences informatiques</h3>
+          <div class="skill-row">
+            <span>Microsoft Word</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:40%"></div></div>
+            <span class="skill-level">Base</span>
+          </div>
+          <div class="skill-row">
+            <span>Microsoft Excel</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:40%"></div></div>
+            <span class="skill-level">Base</span>
+          </div>
+          <div class="skill-row">
+            <span>LaTeX</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+            <span class="skill-level">Documents scientifiques</span>
+          </div>
+          <div class="skill-row">
+            <span>Python</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:55%"></div></div>
+            <span class="skill-level">Bases & applications math.</span>
+          </div>
+        </div>
+
+        <div class="skills-block">
+          <h3>Langues</h3>
+          <div class="lang-row">
+            <span class="flag">🇫🇷</span>
+            <span>Français</span>
+            <span class="lang-level">Courant</span>
+          </div>
+          <div class="lang-row">
+            <span class="flag">🇬🇧</span>
+            <span>Anglais</span>
+            <span class="lang-level">Débutant</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner">
+      <p class="kicker">Restons en contact</p>
+      <h2>Discutons</h2>
+      <p class="contact-intro">
+        Un cours, une collaboration pédagogique, une question sur un exercice
+        ou simplement envie d'échanger sur les mathématiques ? Écrivez-moi.
+      </p>
+
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/edmondgbanou@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nouveau message depuis le site d'Edmond GBAMOU">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="Nom" required placeholder="Votre nom">
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="Email" required placeholder="vous@exemple.com">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" rows="5" required placeholder="Votre message"></textarea>
+
+          <button type="submit" class="btn btn-primary">Envoyer le message</button>
+          <p class="form-note" id="formNote" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-info">
+          <a href="mailto:edmondgbanou@gmail.com" class="contact-item">
+            <span class="contact-icon">✉</span>
+            <span>edmondgbanou@gmail.com</span>
+          </a>
+          <a href="tel:+224623468237" class="contact-item">
+            <span class="contact-icon">📱</span>
+            <span>+224 623 46 82 37</span>
+          </a>
+          <a href="https://wa.me/224623468237" class="contact-item" target="_blank" rel="noopener">
+            <span class="contact-icon">💬</span>
+            <span>WhatsApp — +224 623 46 82 37</span>
+          </a>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <span>Conakry, Guinée</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-name">Edmond GBAMOU — Professeur de Mathématiques</p>
+  <p class="footer-tagline">Enseignement • Mathématiques • Recherche • Innovation</p>
+  <p class="footer-copy">© <span id="year"></span> — Tous droits réservés</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
